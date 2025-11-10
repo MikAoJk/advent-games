@@ -30,11 +30,11 @@ const games = [
   { day:17, key:'caroltyper',    title:'Carol Typer' },
   { day:18, key:'icemaze',       title:'Ice Maze' },
   { day:19, key:'reindeerpair',  title:'Reindeer Pair' },
-  { day:20, key:'cookiebake',    title:'Cookie Bake (Stub)' },
-  { day:21, key:'blizzardbalance',title:'Blizzard Balance (Stub)' },
-  { day:22, key:'northpolequiz', title:'North Pole Quiz (Stub)' },
-  { day:23, key:'pixeltree',     title:'Pixel Tree (Stub)' },
-  { day:24, key:'santasprint',   title:'Santa Sprint (Stub)' },
+  { day:20, key:'cookiebake',    title:'Cookie Bake' },
+  { day:21, key:'blizzardbalance',title:'Blizzard Balance' },
+  { day:22, key:'northpolequiz', title:'North Pole Quiz' },
+  { day:23, key:'pixeltree',     title:'Pixel Tree' },
+  { day:24, key:'santasprint',   title:'Santa Sprint' },
 ];
 
 // Determine today's day (cheat: allow all unlocked; optionally restrict)
