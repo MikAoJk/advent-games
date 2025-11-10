@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Advent Mini Games Calendar</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🎄 Advent Mini Games 🎮</h1>
+    <p>Unlock a door each day (or cheat and play them all!)</p>
+  </header>
+
+  <main>
+    <div id="calendar" class="calendar-grid"></div>
+  </main>
+
+  <footer>
+    <small>Made with ❤️ HTML • CSS • JS — Extend freely</small>
+  </footer>
+
+  <!-- Modal for games -->
+  <div id="gameModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close-btn" aria-label="Close">✖</button>
+      <h2 id="gameTitle"></h2>
+      <div id="gameStatus" class="status-bar"></div>
+      <div id="gameRoot" class="game-root"></div>
+      <div class="actions">
+        <button id="restartGame" class="secondary-btn">Restart</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="games/game_snowfall.js"></script>
+  <script src="games/game_memory.js"></script>
+  <script src="games/game_presentcatch.js"></script>
+  <script src="games/game_stubs.js"></script>
+</body>
+</html>
