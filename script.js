@@ -37,14 +37,6 @@ const games = [
   { day:24, key:'santasprint',   title:'Santa Sprint' },
 ];
 
-// Determine today's day (cheat: allow all unlocked; optionally restrict)
-const now = new Date();
-const currentMonth = now.getMonth(); // 0-based
-// If you want strict unlocking only in December, uncomment below:
-// const isDecember = currentMonth === 11;
-const isDecember = true; // For demo: always treat as December.
-const todayDay = now.getDate();
-
 // Build calendar
 games.forEach(game => {
   const door = document.createElement('button');
@@ -53,12 +45,8 @@ games.forEach(game => {
     <span class="door-number">${game.day}</span>
     <span class="door-title">${game.title}</span>
   `;
-  // Lock logic: in real Advent restrict to <= todayDay
-  const locked = isDecember ? (game.day > todayDay) : false;
-  if (locked) door.classList.add('locked');
-
+  
   door.addEventListener('click', () => {
-    if (door.classList.contains('locked')) return;
     launchGame(game);
   });
 
